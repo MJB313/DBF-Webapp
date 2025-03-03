@@ -39,9 +39,10 @@ h6 {
 font-family: "Playfair Display", serif;
 }
 
-p {
+p, a {
 font-family: "Rubik", serif;
 }
+
 
 
 
@@ -50,7 +51,145 @@ font-family: "Rubik", serif;
 /* HER STYLES INDEX.HTML */
 
 
+/* Header Start */
 
+header {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+header div {
+    display: grid;
+}
+
+
+header video {
+    width: 100%;
+    position: relative;
+    grid-row: 1;
+    grid-column: 1;
+
+}
+
+header img {
+    grid-row: 1;
+    grid-column: 1;
+    z-index: 1;
+    width: 150px;
+}
+
+header a {
+    grid-row: 1;
+    grid-column: 1;
+    z-index: 1;
+    display: flex;
+    justify-content: flex-end;
+    padding: 1.5rem;
+    text-decoration: none;
+}
+
+header i {
+    font-size: 2rem;
+    color: var(--lightDarkmode);
+}
+
+header h1 {
+    grid-row: 1;
+    grid-column: 1;
+    z-index: 1;
+    text-align: center;
+    align-content: end;
+    padding-bottom: 3.5rem;
+    color: white;
+}
+header p {
+    grid-row: 1;
+    grid-column: 1;
+    z-index: 1;
+    text-align: center;
+    align-content: end;
+    padding-bottom: 2rem;
+    color: white;
+    font-size: 1rem;
+}
+
+/* Header Slut */
+
+
+
+/* Main Start */
+
+main{
+    padding-inline: 1.5rem;
+}
+
+
+.omOs {
+    display: grid;
+    gap: 1rem;
+}
+
+.omOs h2 {
+    font-size: 2.5rem;
+}
+
+.omOs p {
+    font-size: 1rem;
+}
+
+.omOs a {
+    text-align: center;
+    width: 50%;
+    margin: 0 auto;
+    background-color: var(--cta);
+    padding: 1rem 2rem;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 1rem;
+}
+
+/* Main Slut */
+
+
+
+
+
+
+
+/* Footer Start */
+
+footer {
+    width: 100%;
+    padding-block: 1.5rem;
+    position: fixed;
+    bottom: 0;
+    z-index: 1000;
+    box-shadow: 0 0 3px 0px ;
+
+}
+
+
+footer nav ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-inline: 1.5rem;
+    list-style-type: none;
+}
+
+
+footer a {
+    padding: 2rem;
+}
+
+
+footer i {
+    font-size: 2.5rem;
+    color: black;
+}
+
+/* Footer slut */
 
 
 

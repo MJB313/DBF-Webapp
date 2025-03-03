@@ -164,6 +164,7 @@ footer {
     padding-block: 1.5rem;
     position: fixed;
     bottom: 0;
+    left: 0;
     z-index: 1000;
     box-shadow: 0 0 3px 0px ;
 

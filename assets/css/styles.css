@@ -43,7 +43,9 @@ p {
 font-family: "Rubik", serif;
 }
 
-
+h1 {
+    text-align: center;
+}
 
 
 
@@ -248,7 +250,99 @@ font-family: "Rubik", serif;
 
 
 /* HER STYLES INFO.HTML */
+/* https://fontawesome.com/icons/coins?f=classic&s=solid */
+/* https: //fontawesome.com/icons/calendar-day?f=classic&s=solid  */
+/* https: //fontawesome.com/icons/handshake-simple?f=classic&s=solid */
 
+.info_page {
+    padding: 15px;
+}
+
+.info_faq img {
+    width: 35px;
+    height: 35px;
+    margin-top: 5px;
+}
+
+.info_faq1 {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+
+.info_faq2 {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+
+.info_faq2 img {
+    transform: rotate(25deg);
+}
+
+.info_faq3 {
+    display: flex;
+    align-items: flex-start;
+    gap: 10px;
+    margin-bottom: 1rem;
+}
+
+.info_faq {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.info_faq p {
+    margin: 0;
+}
+
+.info_page h2 {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.info_faq h3 {
+    margin-bottom: 0;
+}
+
+.info_om_os p {
+    margin-bottom: 10px;
+}
+
+.info_nyhedsbrev p {
+    margin-bottom: 1rem;
+}
+
+/* Info side - Nyhedsbrev CTA */
+.nyhedsbrev_submit {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border: none;
+    padding: 0;
+    margin: 0;
+    gap: 1px;
+}
+
+.nyhedsbrev_submit input {
+    background-color: #d9d9d9;
+    border-radius: 5px;
+    text-align: center;
+    padding: 5px;
+}
+
+.nyhedsbrev_submit button {
+    width: 175px;
+    margin: 5px;
+    padding: 4px;
+    background-color: #008ffc;
+    border-radius: 5px;
+    color: white;
+    padding: 5px;
+}
 
 
 

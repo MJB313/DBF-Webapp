@@ -682,3 +682,70 @@ footer i {
 
 
 /* HER STYLES PROGRAM.HTML */
+
+
+
+.program {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1rem;
+    padding-inline: 1.5rem;
+}
+
+.program img {
+    width: 100%;
+}
+
+.program div {
+position: relative;
+}
+
+.program h6 {
+    position: absolute;
+    bottom: 50px;
+    left: 10px;
+    color: white;
+    font-size: 1.5rem;
+    text-shadow: 2px 0px 5px black;
+}
+
+.program p {
+    position: absolute;
+    bottom: 30px;
+    left: 10px;
+    color: white;
+    font-size: 1rem;
+    text-shadow: 2px 0px 5px black;
+}
+
+.programHeader {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.programHeader i {
+    font-size: 2rem;
+    color: var(--lightDarkmode);
+    text-shadow: 1px 0px 5px black;
+}
+
+.programH1 {
+    text-align: center;
+    padding-block: 1rem 3rem;
+    font-size: 3rem;
+}
+
+.filter {
+display: flex;
+justify-content: flex-end;
+}
+
+.filter a{
+    padding: 1.5rem;
+}
+
+.filter i{
+    color: black;
+    font-size: 2rem;
+}

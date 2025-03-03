@@ -15,15 +15,18 @@
   <body>
     <header>
       <div>
+        <div class="headerIconWrapper">
         <img src="./assets/images/Logo fritlagt.png" alt="Logo" title="logo" />
-        <video src="./assets/videos/Test 1.mp4" autoplay loop muted></video>
         <a href="#"><i class="fa-solid fa-moon"></i></a>
+      </div>
+        <video src="./assets/videos/Test 1.mp4" autoplay loop muted></video>
+        
         <h1>Den Blå Festival</h1>
         <p>14 - 18 aug. 2025</p>
       </div>
     </header>
 
-    <main>
+    <main class="forsideMain">
       <section class="Jazz">
         <h2>Jazz</h2>
       </section>
@@ -40,6 +43,21 @@
         </p>
         <a href="info.html">Find informationer her!</a>
       </section>
+
+      <section class="info_nyhedsbrev">
+        <h2>Nyhedsbrev</h2>
+        <p>
+          Vil du opdateres om programmet for 2025, så tilmeld dig vores nyhedsbrev!
+        </p>
+        <fieldset class="nyhedsbrev_submit">
+          <label for="email"></label>
+          <input type="text" id="email" placeholder="Skriv din mail her" />
+          <input type="submit" id="submit" value="Send din mail ind">
+        </fieldset>
+      </section>
+  
+
+
     </main>
 
     <footer>

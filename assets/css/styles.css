@@ -455,6 +455,7 @@ font-family: "Rubik", serif;
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
+    padding-inline: 1.5rem;
 }
 
 .program img {
@@ -471,6 +472,7 @@ position: relative;
     left: 10px;
     color: white;
     font-size: 1.5rem;
+    text-shadow: 2px 0px 5px black;
 }
 
 .program p {
@@ -479,4 +481,37 @@ position: relative;
     left: 10px;
     color: white;
     font-size: 1rem;
+    text-shadow: 2px 0px 5px black;
+}
+
+.programHeader {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.programHeader i {
+    font-size: 2rem;
+    color: var(--lightDarkmode);
+    text-shadow: 1px 0px 5px black;
+}
+
+.programH1 {
+    text-align: center;
+    padding-block: 1rem 3rem;
+    font-size: 3rem;
+}
+
+.filter {
+display: flex;
+justify-content: flex-end;
+}
+
+.filter a{
+    padding: 1.5rem;
+}
+
+.filter i{
+    color: black;
+    font-size: 2rem;
 }

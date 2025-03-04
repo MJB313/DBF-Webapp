@@ -13,10 +13,19 @@ font-family: "Rubik",serif;
 /* ___________________________________ */
 
 :root {
-    --darkModeBlue: #001C2E;
+    --text:#141414;
+    --background: #fff;
     --cta: #008FFC;
-    --lightDarkmode: #FFE96A;
+    --sunMoon: #FFE96A;
+    --footer: #fff;
+}
 
+.darkMode {
+    --text: #fff;
+    --background: #1B262C;
+    --cta: #008FFC;
+    --sunMoon: #FFE96A;
+    --footer: #36454F;
 }
 
 
@@ -41,11 +50,17 @@ font-family: "Playfair Display", serif;
 
 p, a, input {
 font-family: "Rubik", serif;
+color: var(--text);
 }
 
 h1 {
     text-align: center;
     font-size: 2.5rem;
+    color: var(--text);
+}
+
+body {
+    background: var(--background);
 }
 
 h2 {
@@ -75,6 +90,13 @@ header {
 
 header div {
     display: grid;
+}
+
+
+header i {
+    font-size: 2rem;
+    color: var(--lightDarkmode);
+    text-shadow: 1px 0px 5px black;
 }
 
 
@@ -111,10 +133,7 @@ header a {
     padding: 1.5rem 2rem 0 0;
 }
 
-header i {
-    font-size: 2rem;
-    color: var(--lightDarkmode);
-}
+
 
 header h1 {
     grid-row: 1;
@@ -235,27 +254,28 @@ footer i {
     padding: 1rem;
 }
 
-.info_faq img {
-    width: 35px;
-    height: 35px;
-    margin-top: 5px;
+
+.info_faq i {
+    font-size: 2rem;
+    color: var(--text);
+    width: 30px;
 }
 
 .info_faq1 {
     display: flex;
     align-items: flex-start;
     gap: 10px;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
 .info_faq2 {
     display: flex;
     align-items: flex-start;
     gap: 10px;
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
 }
 
-.info_faq2 img {
+.info_faq2 i {
     transform: rotate(25deg);
 }
 
@@ -263,7 +283,7 @@ footer i {
     display: flex;
     align-items: flex-start;
     gap: 10px;
-    margin-bottom: 0;
+    margin-bottom: 2rem;
 }
 
 .info_faq {
@@ -272,25 +292,31 @@ footer i {
 }
 
 .info_faq p {
-    margin: 0;
+    /* margin: 0; */
+    padding-inline: 0.8rem;
+    color: var(--text);
 }
 
 .info_page h2 {
     margin-top: 1rem;
     margin-bottom: 1rem;
+    color: var(--text);
 }
 
 .info_faq h3 {
-    margin-bottom: 0;
+    padding-inline: 0.8rem;
+    font-weight: 700;
+    color: var(--text);
 }
 
 .info_om_os p {
     margin-bottom: 10px;
+    color: var(--text);
 }
 
 .info_nyhedsbrev p {
     margin-bottom: 1rem;
-    font-size: 2.;
+    color: var(--text);
 }
 
 
@@ -326,6 +352,195 @@ footer i {
     font-size: 1rem;
     border: none;
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -376,14 +591,6 @@ position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1rem;
-}
-
-header i {
-    font-size: 2rem;
-    color: var(--lightDarkmode);
-    text-shadow: 1px 0px 5px black;
-}
 
 .programH1 {
     text-align: center;
@@ -404,3 +611,37 @@ justify-content: flex-end;
     color: black;
     font-size: 2rem;
 }
+    color: var(--sunMoon);
+    font-size: 2rem;
+    text-shadow: 1px 1px 7px black;
+}
+
+
+
+#themeSwitch i:last-child{
+   display: none;
+}
+
+.darkMode #themeSwitch i:first-child{
+    display: none;
+}
+
+.darkMode #themeSwitch i:last-child{
+    display: block;
+}
+
+
+
+#themeSwitch {
+    width: 50px;
+    height: 50px;
+    background: none;
+    border: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+
+

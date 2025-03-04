@@ -18,6 +18,7 @@ font-family: "Rubik",serif;
     --cta: #008FFC;
     --sunMoon: #FFE96A;
     --footer: #fff;
+    --email: #000000; 
 }
 
 .darkMode {
@@ -46,6 +47,7 @@ h4,
 h5,
 h6 {
 font-family: "Playfair Display", serif;
+color: var(--text);
 }
 
 p, a, input {
@@ -57,6 +59,7 @@ h1 {
     text-align: center;
     font-size: 2.5rem;
     color: var(--text);
+
 }
 
 body {
@@ -71,9 +74,6 @@ section {
     padding-block: 1rem;
 }
 
-section:last-of-type {
-    margin-bottom: 6rem;
-}
 
 
 
@@ -86,6 +86,7 @@ section:last-of-type {
 header {
     display: grid;
     grid-template-columns: 1fr;
+    position: relative;
 }
 
 header div {
@@ -95,8 +96,9 @@ header div {
 
 header i {
     font-size: 2rem;
-    color: var(--lightDarkmode);
+    color: var(--sunMoon);
     text-shadow: 1px 0px 5px black;
+    padding-right: 1.5rem;
 }
 
 
@@ -111,8 +113,19 @@ header video {
 }
 
 .headerIconWrapper {
-    grid-column: 1;
-    grid-row: 1;
+width: 100%;
+display: flex;
+justify-content: space-between;
+align-items: center;
+}
+
+.headerIconWrapperForside {
+position: absolute;
+}
+
+.headerIconWrapper button {
+    z-index: 100;
+    padding-right: 1rem;
 }
 
 header img {
@@ -214,7 +227,7 @@ footer {
     left: 0;
     z-index: 1000;
     box-shadow: 0 0 3px 0px ;
-    background-color: white;
+    background-color: var(--footer);
 }
 
 
@@ -233,9 +246,23 @@ footer a {
 
 
 footer i {
+    color: var(--text);
     font-size: 2.5rem;
-    color: black;
+    color: var(--text);
 }
+
+footer nav ul li a i:active {
+    color: var(--cta);
+}
+
+footer nav ul li a i:focus-visible
+ {
+    color: var(--cta);
+}
+
+
+
+
 
 /* Footer slut */
 
@@ -291,9 +318,12 @@ footer i {
     margin-bottom: 1rem;
 }
 
+.info_faq i {
+    margin-right: 1rem;
+}
+
 .info_faq p {
     /* margin: 0; */
-    padding-inline: 0.8rem;
     color: var(--text);
 }
 
@@ -304,7 +334,6 @@ footer i {
 }
 
 .info_faq h3 {
-    padding-inline: 0.8rem;
     font-weight: 700;
     color: var(--text);
 }
@@ -314,9 +343,17 @@ footer i {
     color: var(--text);
 }
 
+.forsideNyhedsbrev {
+    margin-bottom: 6rem;
+}
+
 .info_nyhedsbrev p {
     margin-bottom: 1rem;
     color: var(--text);
+}
+
+.info_sponsorer {
+    margin-bottom: 4rem;
 }
 
 
@@ -340,6 +377,7 @@ footer i {
     text-align: center;
     padding-block: 0.6rem;
     font-size: 1rem;
+    color: var(--email);
 }
 
 #submit {
@@ -355,203 +393,7 @@ footer i {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 /* HER STYLES PROGRAM.HTML */
-
 
 
 .program {
@@ -559,6 +401,7 @@ footer i {
     grid-template-columns: 1fr 1fr;
     gap: 1rem;
     padding-inline: 1rem;
+    margin-bottom: 6rem;
 }
 
 .program img {
@@ -591,16 +434,17 @@ position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
 
 .programH1 {
     text-align: center;
-    padding-block: 1rem 3rem;
+    padding-block: 1rem 2rem;
     font-size: 3rem;
 }
 
 .filter {
 display: flex;
-justify-content: flex-end;
+justify-content: end;
 }
 
 .filter a{
@@ -608,12 +452,11 @@ justify-content: flex-end;
 }
 
 .filter i{
-    color: black;
+    color: var(--text);
     font-size: 2rem;
-}
-    color: var(--sunMoon);
     font-size: 2rem;
     text-shadow: 1px 1px 7px black;
+    text-shadow: none;
 }
 
 

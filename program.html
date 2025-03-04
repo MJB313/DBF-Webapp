@@ -13,12 +13,17 @@
     <meta name="description" content="" />
   </head>
   <body>
-    <header class="programHeader">
-      <img src="./assets/images/Logo fritlagt.png" alt="Logo" title="logo" />
-      <a href="#"><i class="fa-solid fa-moon"></i></a>
+    <header>
+      <div class="headerIconWrapper">
+        <img src="./assets/images/Logo fritlagt.png" alt="Logo" title="logo" />
+        <button id="themeSwitch">
+          <i class="fa-solid fa-moon"></i>
+          <i class="fa-solid fa-sun"></i>
+        </button>
+      </div>
     </header>
 
-    <main>
+    <main class="programMain">
       <h1 class="programH1">Program</h1>
 
       <div class="filter">
@@ -149,13 +154,19 @@
       <nav>
         <ul>
           <li>
-            <a href="index.html"><i class="fa-solid fa-house"></i></a>
+            <a href="index.html" class="active"
+              ><i class="fa-solid fa-house"></i
+            ></a>
           </li>
           <li>
-            <a href="program.html"><i class="fa-solid fa-music"></i></a>
+            <a href="program.html" class="active"
+              ><i class="fa-solid fa-music"></i
+            ></a>
           </li>
           <li>
-            <a href="info.html"><i class="fa-solid fa-circle-info"></i></a>
+            <a href="info.html" class="active"
+              ><i class="fa-solid fa-circle-info"></i
+            ></a>
           </li>
         </ul>
       </nav>

@@ -15,12 +15,19 @@
   <body>
     <header>
       <div>
-        <div class="headerIconWrapper">
-        <img src="./assets/images/Logo fritlagt.png" alt="Logo" title="logo" />
-        <a href="#"><i class="fa-solid fa-moon"></i></a>
-      </div>
+        <div class="headerIconWrapper headerIconWrapperForside">
+          <img
+            src="./assets/images/Logo fritlagt.png"
+            alt="Logo"
+            title="logo"
+          />
+          <button id="themeSwitch">
+            <i class="fa-solid fa-moon"></i>
+            <i class="fa-solid fa-sun"></i>
+          </button>
+        </div>
         <video src="./assets/videos/Test 1.mp4" autoplay loop muted></video>
-        
+
         <h1>Den Blå Festival</h1>
         <p>14 - 18 aug. 2025</p>
       </div>
@@ -44,33 +51,31 @@
         <a href="info.html">Find informationer her!</a>
       </section>
 
-      <section class="info_nyhedsbrev">
+      <section class="info_nyhedsbrev forsideNyhedsbrev">
         <h2>Nyhedsbrev</h2>
         <p>
-          Vil du opdateres om programmet for 2025, så tilmeld dig vores nyhedsbrev!
+          Vil du opdateres om programmet for 2025, så tilmeld dig vores
+          nyhedsbrev!
         </p>
         <fieldset class="nyhedsbrev_submit">
           <label for="email"></label>
           <input type="text" id="email" placeholder="Skriv din mail her" />
-          <input type="submit" id="submit" value="Send din mail ind">
+          <input type="submit" id="submit" value="Send din mail ind" />
         </fieldset>
       </section>
-  
-
-
     </main>
 
     <footer>
       <nav>
         <ul>
           <li>
-            <a href="index.html"><i class="fa-solid fa-house"></i></a>
+            <a href="index.html"><i class="fa-solid fa-house icon"></i></a>
           </li>
           <li>
-            <a href="program.html"><i class="fa-solid fa-music"></i></a>
+            <a href="program.html"><i class="fa-solid fa-music icon"></i></a>
           </li>
           <li>
-            <a href="info.html"><i class="fa-solid fa-circle-info"></i></a>
+            <a href="info.html"><i class="fa-solid fa-circle-info icon"></i></a>
           </li>
         </ul>
       </nav>

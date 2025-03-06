@@ -26,127 +26,194 @@
     <main class="programMain">
       <h1 class="programH1">Program</h1>
 
-      <div class="filter">
-        <a href="#"><i class="fa-solid fa-sliders"></i></a>
-      </div>
+      <section class="filter">
+        <button class="openBtn"><i class="fa-solid fa-sliders"></i></button>
+        <dialog>
+          <label for="genre">Genre:</label>
+
+          <select name="genre" id="genre" value="genre">
+            <option value="alle">All genres</option>
+            <option value="jazz">Jazz</option>
+            <option value="blues">Blues</option>
+          </select>
+
+          <label for="dage">Dage:</label>
+
+          <select name="dage" id="dage" value="dage">
+            <option value="alle">Alle dage</option>
+            <option value="mandag">Mandag</option>
+            <option value="tirsdag">Tirsdag</option>
+            <option value="onsdag">Onsdag</option>
+            <option value="torsdag">Torsdag</option>
+            <option value="fredag">Fredag</option>
+          </select>
+
+          <label for="venue">Venues:</label>
+
+          <select name="venue" id="venue" value="venue">
+            <option value="alle">Alle venues</option>
+            <option value="bluesscenen">Bluesscenen</option>
+            <option value="jazzscenen">Jazzscenen</option>
+            <option value="salling Rooftop">Salling Rooftop</option>
+            <option value="ulla Terkelsen">Ulla Terkelsen</option>
+            <option value="kaffeFair">kaffeFair</option>
+            <option value="klostermarkskolen">Klostermarkskolen</option>
+            <option value="quistwine">Quist Wine</option>
+          </select>
+
+          <button class="closeBtn">Close</button>
+        </dialog>
+      </section>
 
       <section class="program">
-        <a href="#">
-          <div>
-            <img src="https://thispersondoesnotexist.com" alt="hej" />
-            <h6>Placeholder</h6>
-            <p>Placeholder2</p>
-          </div>
-        </a>
+        <div
+          href="#"
+          data-genre="blues"
+          data-date="onsdag"
+          data-venue="salling Rooftop"
+          class="card"
+        >
+          <img
+            src="./assets/images/Blå Festival Billedemappe/Tim Lothar & Jesper Theis - Blues.png"
+            alt="Billede af Tim Lothar & Jesper Theis"
+          />
+          <h6>Tim Lothar & Jesper Theis</h6>
+          <p>Blues</p>
+        </div>
 
-        <a href="#">
-          <div>
-            <img src="https://thispersondoesnotexist.com" alt="hej" />
-            <h6>Placeholder</h6>
-            <p>Placeholder2</p>
-          </div>
-        </a>
+        <div
+          data-genre="jazz"
+          data-date="torsdag"
+          data-venue="jazzscenen"
+          class="card"
+        >
+          <img
+            src="./assets/images/Blå Festival Billedemappe/St. Mariæ Skoles Bigband - Jazz.png"
+            alt="Billede af St. Mariæ Skoles Bigband"
+          />
+          <h6>St. Mariæ Skoles Bigband</h6>
+          <p>Jazz</p>
+        </div>
 
-        <a href="#">
-          <div>
-            <img src="https://thispersondoesnotexist.com" alt="hej" />
-            <h6>Placeholder</h6>
-            <p>Placeholder2</p>
-          </div>
-        </a>
+        <div
+          href="#"
+          data-genre="jazz"
+          data-date="tirsdag"
+          data-venue="ulla Terkelsen"
+          class="card"
+        >
+          <img
+            src="./assets/images/Blå Festival Billedemappe/Brønderslev Bigband - Jazz.png"
+            alt="Billede af Brønderslev Bigband"
+          />
+          <h6>Brønderslev Bigband</h6>
+          <p>Jazz</p>
+        </div>
 
-        <a href="#">
-          <div>
-            <img src="https://thispersondoesnotexist.com" alt="hej" />
-            <h6>Placeholder</h6>
-            <p>Placeholder2</p>
-          </div>
-        </a>
+        <div
+          href="#"
+          data-genre="jazz"
+          data-date="torsdag"
+          data-venue="jazzscenen"
+          class="card"
+        >
+          <img
+            src="./assets/images/Blå Festival Billedemappe/Arosia - Jazz.png"
+            alt="Billede af Arosia"
+          />
+          <h6>Arosia</h6>
+          <p>Jazz</p>
+        </div>
 
-        <a href="#">
-          <div>
-            <img src="https://thispersondoesnotexist.com" alt="hej" />
-            <h6>Placeholder</h6>
-            <p>Placeholder2</p>
-          </div>
-        </a>
-        <a href="#">
-          <div>
-            <img src="https://thispersondoesnotexist.com" alt="hej" />
-            <h6>Placeholder</h6>
-            <p>Placeholder2</p>
-          </div>
-        </a>
-        <a href="#">
-          <div>
-            <img src="https://thispersondoesnotexist.com" alt="hej" />
-            <h6>Placeholder</h6>
-            <p>Placeholder2</p>
-          </div>
-        </a>
-        <a href="#">
-          <div>
-            <img src="https://thispersondoesnotexist.com" alt="hej" />
-            <h6>Placeholder</h6>
-            <p>Placeholder2</p>
-          </div>
-        </a>
-        <a href="#">
-          <div>
-            <img src="https://thispersondoesnotexist.com" alt="hej" />
-            <h6>Placeholder</h6>
-            <p>Placeholder2</p>
-          </div>
-        </a>
-        <a href="#">
-          <div>
-            <img src="https://thispersondoesnotexist.com" alt="hej" />
-            <h6>Placeholder</h6>
-            <p>Placeholder2</p>
-          </div>
-        </a>
-        <a href="#">
-          <div>
-            <img src="https://thispersondoesnotexist.com" alt="hej" />
-            <h6>Placeholder</h6>
-            <p>Placeholder2</p>
-          </div>
-        </a>
-        <a href="#">
-          <div>
-            <img src="https://thispersondoesnotexist.com" alt="hej" />
-            <h6>Placeholder</h6>
-            <p>Placeholder2</p>
-          </div>
-        </a>
-        <a href="#">
-          <div>
-            <img src="https://thispersondoesnotexist.com" alt="hej" />
-            <h6>Placeholder</h6>
-            <p>Placeholder2</p>
-          </div>
-        </a>
-        <a href="#">
-          <div>
-            <img src="https://thispersondoesnotexist.com" alt="hej" />
-            <h6>Placeholder</h6>
-            <p>Placeholder2</p>
-          </div>
-        </a>
-        <a href="#">
-          <div>
-            <img src="https://thispersondoesnotexist.com" alt="hej" />
-            <h6>Placeholder</h6>
-            <p>Placeholder2</p>
-          </div>
-        </a>
-        <a href="#">
-          <div>
-            <img src="https://thispersondoesnotexist.com" alt="hej" />
-            <h6>Placeholder</h6>
-            <p>Placeholder2</p>
-          </div>
-        </a>
+        <div
+          href="#"
+          data-genre="blues"
+          data-date="torsdag"
+          data-venue="bluesscenen"
+          class="card"
+        >
+          <img
+            src="./assets/images/Blå Festival Billedemappe/Tim Lothar, Peter Nande og Søren Lindholt - Blues.png"
+            alt="Billede af Tim Lothar, Peter Nande og Søren Lindholt"
+          />
+          <h6>Tim Lothar, Peter Nande og Søren Lindholt</h6>
+          <p>Blues</p>
+        </div>
+
+        <div
+          href="#"
+          data-genre="blues"
+          data-date="torsdag"
+          data-venue="bluesscenen"
+          class="card"
+        >
+          <img
+            src="./assets/images/Blå Festival Billedemappe/Chris Grey The Bluespand - Blues.png"
+            alt="Billede af "
+          />
+          <h6>Chris Grey & The Bluespand</h6>
+          <p>Blues</p>
+        </div>
+
+        <div
+          href="#"
+          data-genre="blues"
+          data-date="torsdag"
+          data-venue="bluesscenen"
+          class="card"
+        >
+          <img
+            src="./assets/images/Blå Festival Billedemappe/Nello & The Helping Hand Blues Band - Blues.png"
+            alt="Billede af Nello & The Helping Hand Blues Band"
+          />
+          <h6>Nello & The Helping Hand Blues Band</h6>
+          <p>Blues</p>
+        </div>
+
+        <div
+          href="#"
+          data-genre="jazz"
+          data-date="torsdag"
+          data-venue="klostermarkskolen"
+          class="card"
+        >
+          <img
+            src="./assets/images/Blå Festival Billedemappe/Jacob Venndt - Jazz.png"
+            alt="Billede af Jacob Venndt, koncert og jam"
+          />
+          <h6>Jacob Venndt, koncert og jam</h6>
+          <p>Jazz</p>
+        </div>
+
+        <div
+          href="#"
+          data-genre="blues"
+          data-date="torsdag"
+          data-venue="quistwine"
+          class="card"
+        >
+          <img
+            src="./assets/images/Blå Festival Billedemappe/Max Wolff og Ib Pallesen - Blues.png"
+            alt="Billede af Max Wolff og Ib Pallesen"
+          />
+          <h6>Max Wolff og Ib Pallesen</h6>
+          <p>Blues</p>
+        </div>
+
+        <div
+          href="#"
+          data-genre="blues"
+          data-date="torsdag"
+          data-venue="kaffeFair"
+          class="card"
+        >
+          <img
+            src="./assets/images/Blå Festival Billedemappe/HP Lange - Blues.png"
+            alt="Billede af HP Lange"
+          />
+          <h6>HP Lange</h6>
+          <p>Blues</p>
+        </div>
       </section>
     </main>
 

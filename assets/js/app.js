@@ -23,15 +23,42 @@ themeSwitch.addEventListener("click", function(){
 })
 
 
-        const icons = document.querySelectorAll(".icon");
+// Fanger knapper
+const openBtnEl = document.querySelector(".openBtn");
+const closeBtnEl = document.querySelector(".closeBtn");
+const dialogEl = document.querySelector("dialog");
+ 
+// Opsæt eventListener på åbne/lukke knapper
+openBtnEl.addEventListener("click", () => dialogEl.showModal())
+closeBtnEl.addEventListener("click", () => dialogEl.close())
 
-        icons.forEach(icon => {
-            icon.addEventListener("click", function() {
-                // Remove 'active' class from all icons
-                icons.forEach(i => i.classList.remove("active"));
-                
-                // Add 'active' class to the clicked icon
-                this.classList.add("active");
-            });
-        });
 
+
+
+
+function filterCards() {
+    let selectedDay = document.getElementById("dage").value;
+    let selectedGenre = document.getElementById("genre").value;
+    let selectedVenue = document.getElementById("venue").value;
+
+    document.querySelectorAll(".card").forEach(card => {
+        let cardDay = card.getAttribute("data-date"); // Fixed from "data-dage"
+        let cardGenre = card.getAttribute("data-genre");
+        let cardVenue = card.getAttribute("data-venue");
+
+        let dayMatch = (selectedDay === "alle" || cardDay === selectedDay);
+        let genreMatch = (selectedGenre === "alle" || cardGenre === selectedGenre);
+        let venueMatch = (selectedVenue === "alle" || cardVenue === selectedVenue);
+
+        if (dayMatch && genreMatch && venueMatch) {
+            card.classList.remove("hidden");
+        } else {
+            card.classList.add("hidden");
+        }
+    });
+}
+
+// Ensure event listeners are correctly applied
+document.getElementById("dage").addEventListener("change", filterCards);
+document.getElementById("genre").addEventListener("change", filterCards);
+document.getElementById("venue").addEventListener("change", filterCards);

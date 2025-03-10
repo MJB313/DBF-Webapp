@@ -221,7 +221,7 @@ header p {
 
 footer {
     width: 100%;
-    padding-block: 1rem;
+    padding: 0.7rem 1rem;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -235,25 +235,25 @@ footer nav ul{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding-inline: 1.5rem;
     list-style-type: none;
 }
 
 
 footer a {
-    padding: 2rem;
+    padding-inline: 1rem;
 }
 
 
 footer i {
     color: var(--text);
-    font-size: 2.5rem;
+    font-size: 1.8rem;
     color: var(--text);
 }
 
 footer p {
     text-align: center;
     padding-top: 0.5rem;
+    font-size: 0.8rem;
 }
 
 
@@ -449,9 +449,21 @@ position: relative;
     padding-inline: 1rem;
 }
 
-.filter i{
+.closeBtn{
+    display: flex;
+    width: 100%;
+    justify-content: end;
+    background: none;
+    border: none;
+}
+
+.closeBtn i{
+    font-size: 3rem;
+}
+
+
+.openBtn i{
     color: var(--text);
-    font-size: 2rem;
     font-size: 2rem;
     text-shadow: 1px 1px 7px black;
     text-shadow: none;
@@ -485,6 +497,7 @@ label {
 .hidden {
     display: none;
 }
+
 
 
 /* FIlter slut */

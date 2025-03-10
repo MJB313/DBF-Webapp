@@ -45,12 +45,10 @@ h2,
 h3,
 h4,
 h5,
-h6 {
-font-family: "Playfair Display", serif;
-color: var(--text);
-}
-
-p, a, input {
+h6,
+p, 
+a, 
+input {
 font-family: "Rubik", serif;
 color: var(--text);
 }
@@ -458,7 +456,7 @@ position: relative;
 }
 
 .closeBtn i{
-    font-size: 3rem;
+    font-size: 2.5rem;
 }
 
 

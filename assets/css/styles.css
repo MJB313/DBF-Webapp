@@ -221,7 +221,7 @@ header p {
 
 footer {
     width: 100%;
-    padding-block: 1.5rem;
+    padding-block: 1rem;
     position: fixed;
     bottom: 0;
     left: 0;
@@ -251,15 +251,10 @@ footer i {
     color: var(--text);
 }
 
-footer nav ul li a i:active {
-    color: var(--cta);
+footer p {
+    text-align: center;
+    padding-top: 0.5rem;
 }
-
-footer nav ul li a i:focus-visible
- {
-    color: var(--cta);
-}
-
 
 
 
@@ -355,6 +350,7 @@ footer nav ul li a i:focus-visible
 .info_sponsorer {
     margin-bottom: 4rem;
 }
+
 
 
 
@@ -517,6 +513,3 @@ label {
     align-items: center;
 
 }
-
-
-

@@ -42,7 +42,7 @@ function filterCards() {
     let selectedVenue = document.getElementById("venue").value;
 
     document.querySelectorAll(".card").forEach(card => {
-        let cardDay = card.getAttribute("data-date"); // Fixed from "data-dage"
+        let cardDay = card.getAttribute("data-date");
         let cardGenre = card.getAttribute("data-genre");
         let cardVenue = card.getAttribute("data-venue");
 
@@ -58,7 +58,8 @@ function filterCards() {
     });
 }
 
-// Ensure event listeners are correctly applied
 document.getElementById("dage").addEventListener("change", filterCards);
 document.getElementById("genre").addEventListener("change", filterCards);
 document.getElementById("venue").addEventListener("change", filterCards);
+
+

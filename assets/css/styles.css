@@ -208,7 +208,49 @@ header p {
 }
 
 
+/* carousel */
 
+.carousel {
+    display: flex;
+    position: relative;
+    align-items: center;
+    padding-top: 0.5rem;
+}
+
+.carousel img {
+    width: 92vw;
+    height: 250px;
+    object-fit: cover;
+    object-position: 55.9% 98.4%;
+    position: relative;
+}
+
+.carousel h6 {
+    position: absolute;
+    bottom: 30px;
+    left: 1rem;
+    color: white;
+    font-size: 0.9rem;
+    text-shadow: 2px 0px 5px black;
+}
+
+.spanRight{
+    font-size: 2rem;
+    color: var(--text);
+    position: absolute;
+    z-index: 99;
+    right: 0;
+    text-shadow: 2px 0px 5px black;
+
+}
+
+.spanLeft {
+    font-size: 2rem;
+    color: var(--text);
+    position: absolute;
+    z-index: 99;
+    text-shadow: 2px 0px 5px black;
+}
 /* Main Slut */
 
 

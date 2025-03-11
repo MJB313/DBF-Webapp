@@ -37,7 +37,7 @@
       <section class="Jazz">
         <h2>Jazz</h2>
         <div class="carousel">
-          <span class="spanLeft">&#129192;</span>
+          <i class="fa-solid fa-chevron-left spanLeft"></i>
           <div
             data-genre="jazz"
             data-date="torsdag"
@@ -50,14 +50,14 @@
             />
             <h6>St. Mariæ Skoles Bigband</h6>
           </div>
-          <span class="spanRight">&#129193;</span>
+          <i class="fa-solid fa-chevron-right spanRight"></i>
         </div>
       </section>
 
       <section class="Blues">
         <h2>Blues</h2>
         <div class="carousel">
-          <span class="spanLeft">&#129192;</span>
+          <i class="fa-solid fa-chevron-left spanLeft"></i>
           <div
             data-genre="blues"
             data-date="onsdag"
@@ -70,7 +70,7 @@
             />
             <h6>Tim Lothar & Jesper Theis</h6>
           </div>
-          <span class="spanRight">&#129193;</span>
+          <i class="fa-solid fa-chevron-right spanRight"></i>
         </div>
       </section>
 
@@ -91,7 +91,12 @@
         </p>
         <fieldset class="nyhedsbrev_submit">
           <label for="email"></label>
-          <input type="text" id="email" placeholder="Skriv din mail her" />
+          <input
+            type="email"
+            id="email"
+            placeholder="Skriv din mail her"
+            required
+          />
           <input type="submit" id="submit" value="Send din mail ind" />
         </fieldset>
       </section>

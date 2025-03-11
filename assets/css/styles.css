@@ -101,7 +101,7 @@ header i {
 
 
 header video {
-    height: 30vh;
+    height: 40vh;
     width: 100%;
     object-fit: cover;
     position: relative;
@@ -217,7 +217,7 @@ header p {
 
 .carousel img {
     width: 92vw;
-    height: 250px;
+    height: 220px;
     object-fit: cover;
     position: relative;
 }
@@ -382,7 +382,6 @@ footer p {
 }
 
 .info_nyhedsbrev p {
-    margin-bottom: 1rem;
     color: var(--text);
 }
 
@@ -397,12 +396,8 @@ footer p {
 .nyhedsbrev_submit {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
     border: none;
-    padding-block: 0;
-    margin: 0;
-    gap: 1px;
 }
 
 #email {
@@ -415,6 +410,7 @@ footer p {
     color: var(--email);
 }
 
+
 #submit {
     width: 70%;
     margin: 5px;
@@ -424,6 +420,7 @@ footer p {
     color: white;
     font-size: 1rem;
     border: none;
+    cursor: pointer;
 }
 
 
@@ -437,6 +434,7 @@ footer p {
     gap: 1rem;
     padding-inline: 1rem;
     margin-bottom: 6rem;
+    cursor: pointer;
 }
 
 .program img {
@@ -565,3 +563,88 @@ label {
     align-items: center;
 
 }
+
+/* Band Preview */
+ 
+.band_preview {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  justify-content: center;
+  align-items: center;
+  z-index: 1000;
+  padding-bottom: 50px;
+}
+ 
+.band_preview .preview-active {
+  display: none;
+  background: var(--background);
+  padding: 20px;
+  width: 80%;
+  position: relative;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+  margin-block: 50px;
+  max-height: 90vh;
+  overflow-y: auto;
+}
+ 
+.band_preview .preview-active.active {
+  display: block;
+  transform: translateY(0);
+  padding-bottom: 30px;
+}
+ 
+.band_preview .image-container img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+ 
+.buttonClose {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  font-size: 2.5rem;
+  cursor: pointer;
+  color: var(--text);
+  background: none;
+  border: none;
+  padding: 0.5rem 0.5rem 1rem 0;
+}
+
+
+ 
+.band_preview.active {
+    
+  display: flex;
+  opacity: 1;
+  transition: opacity 0.3s ease-in-out;
+}
+ 
+.band_preview .image-container {
+  padding-top: 50px;
+  text-align: left;
+}
+ 
+.band_preview h3 {
+  font-size: 24px;
+  margin-top: 5px;
+}
+ 
+.band_preview h4 {
+  margin-block: 1rem;
+}
+ 
+.band_preview p {
+  font-size: 16px;
+  margin-top: 10px;
+  line-height: 1.5;
+  padding-bottom: 50px;
+}
+ 
+/* Band Preview End */
